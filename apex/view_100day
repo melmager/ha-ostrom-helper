@@ -1,0 +1,15 @@
+type: custom:apexcharts-card
+graph_span: 100d
+header:
+  show: true
+  title: ApexCharts-Card
+  show_states: true
+  colorize_states: true
+update_interval: 1h
+series:
+  - entity: ostrom.price
+    type: column
+    show:
+      datalabels: false
+  - entity: ostrom.price
+    attribute: average
